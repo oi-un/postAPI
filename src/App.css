@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.title {
+  text-align: center;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+}
+colgroup col:nth-child(1),
+colgroup col:nth-child(3) {
+  width: 10%;
+}
+colgroup col:nth-child(2) {
+  width: 80%;
+}
+thead th {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #aaa;
+}
+tbody tr td:nth-child(1),
+tbody tr td:nth-child(3) {
+  text-align: center;
+}
+tbody tr:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+}
+.pagination div {
+  flex-grow: 1;
+}
+.pagination-btns button {
+  cursor: pointer;
+  margin: 0 3px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.pagination-btns button:hover {
+  color: orange;
+  background-color: #eee;
+}
+.pagination-btns button.active {
+  color: orange;
+  font-weight: bold;
+}
+.pagination select {
+  width: 100px;
+  text-align: center;
+}
+
+/* Post Modal */
+.modal-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  cursor: pointer;
+}
+.modal-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #fff;
+}
+.modal-title {
+  text-align: center;
+  padding: 0 0 5px;
+  border-bottom: 2px solid #aaa;
+}
+.modal-content {
+  margin: 10px 0;
+  min-height: 200px;
+}
+.modal-close {
+  font-size: 3rem;
+  cursor: pointer;
+
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
