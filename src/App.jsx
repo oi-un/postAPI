@@ -14,12 +14,12 @@ function App() {
   }, []);
 
   const [postPerPage, setPostPerPage] = useState(5);
-  const totalPage = Math.ceil(post.length / postPerPage);
-
   const [currentPage, setCurrentPage] = useState(1);
   const firstIndex = (currentPage - 1) * postPerPage;
   const lastIndex = firstIndex + postPerPage;
   const currentPost = post.slice(firstIndex, lastIndex);
+
+  const totalPage = Math.ceil(post.length / postPerPage);
 
   const [showModal, setShowModal] = useState(false);
   const [item, setItem] = useState([]);
