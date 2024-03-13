@@ -1,3 +1,7 @@
-# React + Vite
+Post API를 활용한 Pagination 레파지토리입니다.
+React.js로 페이지네이션을 구현했습니다.
 
-pagination을 작성한 레파지토리입니다.
+Pagination 컴포넌트에 있는 select를 선택해 한번에 5, 10, 15줄로 선택해서 볼 수 있도록 했고,
+페이지 버튼도 5개씩 보일 수 있도록 했습니다..
+
+포스트를 클릭하면 해당 포스트의 상세 내용이 나와있는 modal을 보일 수 있도록 PostModal 컴포넌트를 만들었습니다.
